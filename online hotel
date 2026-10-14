@@ -1,111 +1,106 @@
 class Hotel_Reservation:
+
     def __init__(self):
 
         self.room_features = {
             "Standard": {
-                "description": "Oddiy va qulay xona.",
+                "description": "Simple and comfortable room.",
                 "qulayliklar": [
-                    "1 ta katta krovat",
+                    "1 large bed",
                     "Wi-Fi",
-                    "Televizor",
-                    "Konditsioner",
-                    "Dush",
-                    "Sochiq",
-                    "Mini stol"
-                ]
+                    "TV",
+                    "Air conditioner",
+                    "Shower",
+                    "Towels",
+                    "Mini table",
+                ],
             },
-
             "Comfort": {
-                "description": "Standard xonadan kengroq va qulayroq xona.",
+                "description": "Spacious and more comfortable than Standard.",
                 "qulayliklar": [
-                    "1 ta katta krovat",
-                    "Tezkor Wi-Fi",
+                    "1 large bed",
+                    "High-speed Wi-Fi",
                     "Smart TV",
-                    "Konditsioner",
-                    "Dush",
-                    "Fen",
-                    "Mini muzlatgich",
-                    "Choy va kofe"
-                ]
+                    "Air conditioner",
+                    "Shower",
+                    "Hairdryer",
+                    "Mini fridge",
+                    "Tea and coffee",
+                ],
             },
-
             "Deluxe": {
-                "description": "Keng va zamonaviy dizayndagi xona.",
+                "description": "Spacious room with modern design.",
                 "qulayliklar": [
-                    "King-size krovat",
-                    "Tezkor Wi-Fi",
+                    "King-size bed",
+                    "High-speed Wi-Fi",
                     "Smart TV",
-                    "Konditsioner",
-                    "Katta hammom",
-                    "Fen",
+                    "Air conditioner",
+                    "Large bathroom",
+                    "Hairdryer",
                     "Mini-bar",
-                    "Kofe mashinasi",
-                    "Kiyim shkafi",
-                    "Shahar manzarasi"
-                ]
+                    "Coffee machine",
+                    "Wardrobe",
+                    "City view",
+                ],
             },
-
             "Premium": {
-                "description": "Yuqori darajadagi qulayliklarga ega xona.",
+                "description": "Room with high-level amenities.",
                 "qulayliklar": [
-                    "King-size krovat",
+                    "King-size bed",
                     "Premium Wi-Fi",
-                    "Katta Smart TV",
-                    "Konditsioner",
-                    "Keng hammom",
-                    "Vanna",
+                    "Large Smart TV",
+                    "Air conditioner",
+                    "Spacious bathroom",
+                    "Bathtub",
                     "Mini-bar",
-                    "Kofe mashinasi",
-                    "Seyf",
-                    "Ish stoli",
-                    "Chiroyli manzara"
-                ]
+                    "Coffee machine",
+                    "Safe",
+                    "Desk",
+                    "Beautiful view",
+                ],
             },
-
             "Luxury": {
-                "description": "Hashamatli va juda keng xona.",
+                "description": "Luxurious and very spacious room.",
                 "qulayliklar": [
-                    "King-size premium krovat",
+                    "King-size premium bed",
                     "Premium Wi-Fi",
-                    "Katta Smart TV",
-                    "Konditsioner",
-                    "Luxury hammom",
-                    "Vanna",
+                    "Large Smart TV",
+                    "Air conditioner",
+                    "Luxury bathroom",
+                    "Bathtub",
                     "Mini-bar",
-                    "Kofe mashinasi",
-                    "Seyf",
-                    "Ish stoli",
-                    "Divan",
-                    "Balkon",
-                    "Shahar manzarasi",
-                    "24/7 room service"
-                ]
+                    "Coffee machine",
+                    "Safe",
+                    "Desk",
+                    "Sofa",
+                    "Balcony",
+                    "City view",
+                    "24/7 room service",
+                ],
             },
-
             "VIP": {
-                "description": "Mehmonxonaning eng yuqori darajadagi xonasi.",
+                "description": "The highest tier room in the hotel.",
                 "qulayliklar": [
-                    "King-size luxury krovat",
-                    "Eng tezkor Wi-Fi",
+                    "King-size luxury bed",
+                    "Ultra-fast Wi-Fi",
                     "Premium Smart TV",
-                    "Aqlli boshqaruv tizimi",
-                    "Katta luxury hammom",
+                    "Smart control system",
+                    "Large luxury bathroom",
                     "Jacuzzi",
                     "Mini-bar",
-                    "Premium kofe mashinasi",
-                    "Seyf",
-                    "Alohida ish xonasi",
-                    "Katta divan",
-                    "Katta balkon",
-                    "Panorama manzarasi",
+                    "Premium coffee machine",
+                    "Safe",
+                    "Separate office room",
+                    "Large sofa",
+                    "Large balcony",
+                    "Panoramic view",
                     "24/7 VIP room service",
-                    "Bepul nonushta",
-                    "Aeroport transferi"
-                ]
-            }
+                    "Free breakfast",
+                    "Airport transfer",
+                ],
+            },
         }
 
-       
         self.standart = {
             1: ("Standard", 10),
             2: ("Standard", 10),
@@ -118,10 +113,9 @@ class Hotel_Reservation:
             9: ("Standard", 10),
             10: ("Standard", 10),
             11: ("Standard", 15),
-            12: ("Standard", 15)
+            12: ("Standard", 15),
         }
 
-        
         self.comfort = {
             13: ("Comfort", 25),
             14: ("Comfort", 25),
@@ -134,10 +128,9 @@ class Hotel_Reservation:
             21: ("Comfort", 30),
             22: ("Comfort", 30),
             23: ("Comfort", 25),
-            24: ("Comfort", 25)
+            24: ("Comfort", 25),
         }
 
-        
         self.deluxe = {
             25: ("Deluxe", 35),
             26: ("Deluxe", 35),
@@ -149,10 +142,9 @@ class Hotel_Reservation:
             32: ("Deluxe", 35),
             33: ("Deluxe", 35),
             34: ("Deluxe", 35),
-            35: ("Deluxe", 35)
+            35: ("Deluxe", 35),
         }
 
-        
         self.premium = {
             36: ("Premium", 50),
             37: ("Premium", 50),
@@ -163,7 +155,7 @@ class Hotel_Reservation:
             42: ("Premium", 50),
             43: ("Premium", 50),
             44: ("Premium", 50),
-            45: ("Premium", 50)
+            45: ("Premium", 50),
         }
 
         self.luxury = {
@@ -175,10 +167,9 @@ class Hotel_Reservation:
             51: ("Luxury", 100),
             52: ("Luxury", 100),
             53: ("Luxury", 100),
-            54: ("Luxury", 100)
+            54: ("Luxury", 100),
         }
 
-        
         self.vip = {
             55: ("VIP", 150),
             56: ("VIP", 150),
@@ -187,79 +178,59 @@ class Hotel_Reservation:
             59: ("VIP", 150),
             60: ("VIP", 150),
             61: ("VIP", 150),
-            62: ("VIP", 150)
+            62: ("VIP", 150),
         }
 
 
-
-
 booked_rooms = {
-
-  
     3: ("Standard", "2026.08.06", "2026.08.10"),
     5: ("Standard", "2026.08.12", "2026.08.15"),
     7: ("Standard", "2026.08.18", "2026.08.22"),
     9: ("Standard", "2026.08.23", "2026.08.27"),
     11: ("Standard", "2026.08.28", "2026.09.02"),
     12: ("Standard", "2026.08.10", "2026.08.14"),
-
-    
     14: ("Comfort", "2026.08.05", "2026.08.09"),
     17: ("Comfort", "2026.08.11", "2026.08.15"),
     20: ("Comfort", "2026.08.18", "2026.08.22"),
     21: ("Comfort", "2026.08.23", "2026.08.27"),
     24: ("Comfort", "2026.08.28", "2026.09.02"),
-
-    
     25: ("Deluxe", "2026.08.04", "2026.08.08"),
     28: ("Deluxe", "2026.08.09", "2026.08.13"),
     30: ("Deluxe", "2026.08.16", "2026.08.20"),
     33: ("Deluxe", "2026.08.21", "2026.08.25"),
     35: ("Deluxe", "2026.08.26", "2026.08.30"),
-
-  
     36: ("Premium", "2026.08.02", "2026.08.06"),
     39: ("Premium", "2026.08.12", "2026.08.16"),
     42: ("Premium", "2026.08.17", "2026.08.21"),
     45: ("Premium", "2026.08.24", "2026.08.28"),
-
-    
     47: ("Luxury", "2026.08.05", "2026.08.10"),
     50: ("Luxury", "2026.08.14", "2026.08.19"),
     54: ("Luxury", "2026.08.22", "2026.08.27"),
-
-
     56: ("VIP", "2026.08.06", "2026.08.10"),
-    61: ("VIP", "2026.08.20", "2026.08.25")
+    61: ("VIP", "2026.08.20", "2026.08.25"),
 }
 
 hotel = Hotel_Reservation()
 
 
 def get_rooms(room_type):
-
     if room_type == "Standard":
         return hotel.standart
-
     elif room_type == "Comfort":
         return hotel.comfort
-
     elif room_type == "Deluxe":
         return hotel.deluxe
-
     elif room_type == "Premium":
         return hotel.premium
-
     elif room_type == "Luxury":
         return hotel.luxury
-
     elif room_type == "VIP":
         return hotel.vip
 
-def room_information():
 
+def room_information():
     print("\n------------------------------------")
-    print("   --  Xonalar -- ")
+    print("    -- Rooms -- ")
     print("--------------------------------------")
 
     print("1. Standard")
@@ -269,7 +240,7 @@ def room_information():
     print("5. Luxury")
     print("6. VIP")
 
-    room_choice = input("\nXona turini tanlang: ")
+    room_choice = input("\nChoose room type: ")
 
     room_types = {
         "1": "Standard",
@@ -277,34 +248,31 @@ def room_information():
         "3": "Deluxe",
         "4": "Premium",
         "5": "Luxury",
-        "6": "VIP"
+        "6": "VIP",
     }
 
     if room_choice not in room_types:
-        print(" - uzurn ammo bunday tanlov yoq")
+        print(" - Sorry, no such choice available.")
         return
 
     room_type = room_types[room_choice]
-
     room = hotel.room_features[room_type]
 
     print("\n=-------------------------------------")
-    print(f"          {room_type.upper()}")
+    print(f"         {room_type.upper()}")
     print("----------------------------------------")
 
-    print("\nTavsif:")
+    print("\nDescription:")
     print(room["description"])
 
-    print("\n - Qulayliklar:")
-
+    print("\n - Amenities:")
     for qulaylik in room["qulayliklar"]:
         print(f"- {qulaylik}")
 
 
 def show_rooms():
-
     print("\n===================================")
-    print("  -- Xona turini tanla -- ")
+    print("  -- Choose Room Type -- ")
     print("===================================")
 
     print("1. Standard")
@@ -314,7 +282,7 @@ def show_rooms():
     print("5. Luxury")
     print("6. VIP")
 
-    choice = input("\n - Xurmatli mijoz tanlang: ")
+    choice = input("\n - Dear customer, please choose: ")
 
     room_types = {
         "1": "Standard",
@@ -322,63 +290,47 @@ def show_rooms():
         "3": "Deluxe",
         "4": "Premium",
         "5": "Luxury",
-        "6": "VIP"
+        "6": "VIP",
     }
 
     if choice not in room_types:
-        print(" - uzur ammo bunday tanlov yoq")
+        print(" - Sorry, no such choice available.")
         return
 
     room_type = room_types[choice]
-
     rooms = get_rooms(room_type)
 
     print("\n===================================")
-    print(f"       {room_type.upper()} XONALAR")
+    print(f"       {room_type.upper()} ROOMS")
     print("===================================")
 
-    print("\n--- Bron qilinganlar ---")
-
+    print("\n--- Booked Rooms ---")
     bor = False
 
     for xona in rooms:
-
         if xona in booked_rooms:
-
             data = booked_rooms[xona]
-
-            print(
-                f"Xona {xona}: "
-                f"{data[1]} - {data[2]}"
-            )
-
+            print(f"Room {xona}: {data[1]} - {data[2]}")
             bor = True
 
     if not bor:
-        print(" - Bron qilingan xona yoq")
+        print(" - No booked rooms.")
 
-    print("\n--- BOSH XONALAR ---")
-
+    print("\n--- AVAILABLE ROOMS ---")
     bor = False
 
     for xona, data in rooms.items():
-
         if xona not in booked_rooms:
-
-            print(
-                f"Xona {xona} | "
-                f"Narxi: ${data[1]}"
-            )
-
+            print(f"Room {xona} | Price: ${data[1]}")
             bor = True
 
     if not bor:
-        print(" - uzur bosh xona yoq")
+        print(" - Sorry, no available rooms.")
+
 
 def book_room():
-
     print("\n------------------------------------")
-    print("          XONA BRON QILISH")
+    print("         ROOM RESERVATION")
     print("--------------------------------------")
 
     print("1. Standard")
@@ -388,7 +340,7 @@ def book_room():
     print("5. Luxury")
     print("6. VIP")
 
-    choice = input("\n - Xona turini tanla: ")
+    choice = input("\n - Choose room type: ")
 
     room_types = {
         "1": "Standard",
@@ -396,146 +348,92 @@ def book_room():
         "3": "Deluxe",
         "4": "Premium",
         "5": "Luxury",
-        "6": "VIP"
+        "6": "VIP",
     }
 
     if choice not in room_types:
-        print(" - uzur bunday tanlov yoq")
+        print(" - Sorry, no such choice available.")
         return
 
     room_type = room_types[choice]
-
     rooms = get_rooms(room_type)
-
     room = hotel.room_features[room_type]
 
     print("\n-----------------------------------")
-    print(f"          {room_type.upper()}")
+    print(f"         {room_type.upper()}")
     print("-------------------------------------")
 
     print(room["description"])
 
-    print("\nQulayliklar:")
-
+    print("\nAmenities:")
     for qulaylik in room["qulayliklar"]:
         print(f"- {qulaylik}")
 
-    print("\n--- XONALAR ---")
+    print("\n--- ROOMS ---")
 
     for xona, data in rooms.items():
-
         if xona in booked_rooms:
-
             bron = booked_rooms[xona]
-
-            print(
-                f"Xona {xona} | "
-                f"BAND | "
-                f"{bron[1]} - {bron[2]}"
-            )
-
+            print(f"Room {xona} | BOOKED | {bron[1]} - {bron[2]}")
         else:
+            print(f"Room {xona} | AVAILABLE | ${data[1]}")
 
-            print(
-                f"Xona {xona} | "
-                f"BOSH | "
-                f"${data[1]}"
-            )
-
-    xona = input("\nXona raqamini tanlang: ")
+    xona = input("\nChoose room number: ")
 
     try:
         xona = int(xona)
-
     except ValueError:
-        print(" - Xona raqamini to'g'ri kiriting")
+        print(" - Please enter a valid room number.")
         return
 
     if xona not in rooms:
-        print(" - Bunday xona mavjud emas")
+        print(" - Such room does not exist.")
         return
 
-    
-
-    ism_familya = input(
-        "iltimos ism va familyangizni kriting:   "
-    )
-
-    kunlar = int(input(
-        "nech kun qolmoqchisiz: "
-    ))
-
-    kirish = input(
-        "\nKirish sanasi (yil.oy.kum): "
-    )
-
-    chiqish = input(
-        "Chiqish sanasi (yil.oy.kum): "
-    )
-
-
+    ism_familya = input("Please enter your first and last name:    ")
+    kunlar = int(input("How many days would you like to stay: "))
+    kirish = input("\nCheck-in date (YYYY.MM.DD): ")
+    chiqish = input("Check-out date (YYYY.MM.DD): ")
 
     if xona in booked_rooms:
-
         bron = booked_rooms[xona]
-
-        print("\nXONA BAND!")
-
-        print(
-            f"Xona {xona} "
-            f"{bron[1]} - {bron[2]} "
-            f"oralig'ida band."
-        )
-
+        print("\nROOM IS BOOKED!")
+        print(f"Room {xona} is booked between {bron[1]} - {bron[2]}.")
         return
 
     narx = rooms[xona][1]
     total = narx * kunlar
 
-    booked_rooms[xona] = (
-        room_type,
-        kirish,
-        chiqish
-    )
-
-    
-
+    booked_rooms[xona] = (room_type, kirish, chiqish)
 
     print("\n-----------------------------------")
-    print("  --- Bron qilish muvaffaqiyatli amalga oshirildi ---")
+    print("   --- Reservation Successful ---")
     print("-------------------------------------")
 
-    print(f"Mijoz: {ism_familya} ")
-    print(f"Xona: {xona}")
-    print(f"Xona Turi: {room_type}")
-    print(f"Narxi: ${narx}/day")
-    print(f"kunlar: {kunlar} kun")
-    print(f"Kirish: {kirish}")
-    print(f"Chiqish: {chiqish}")
+    print(f"Customer: {ism_familya}")
+    print(f"Room: {xona}")
+    print(f"Room Type: {room_type}")
+    print(f"Price: ${narx}/day")
+    print(f"Days: {kunlar} days")
+    print(f"Check-in: {kirish}")
+    print(f"Check-out: {chiqish}")
     print("-----------------------")
-    print(f" --  Umumiy narx: ${total}")
+    print(f" -- Total Price: ${total}")
     print("-----------------------")
-
-    
-
 
 
 def show_booked_rooms():
-    print("\n -- ----------------------------")
-    print(" -- Bron qilingan xoonallar -- ")
+    print("\n --------------------------------")
+    print(" -- Booked Rooms -- ")
     print("----------------------------------")
 
     if len(booked_rooms) == 0:
-        print(" - Hozir bron qilingan xonalar yoq")
+        print(" - No booked rooms right now.")
         return
 
     for xona, data in booked_rooms.items():
+        print(f"Room {xona} | {data[0]} | {data[1]} - {data[2]}")
 
-        print(
-            f"Xona {xona} | "
-            f"{data[0]} | "
-            f"{data[1]} - {data[2]}"
-        )
 
 while True:
     print("\n")
@@ -543,36 +441,30 @@ while True:
     print(" -- Hotel Reservation -- ")
     print("--------------------------")
 
-    print("1. Xonalar haqida ma'lumot")
-    print("2. Xonalarni ko'rish")
-    print("3. Xona bron qilish")
-    print("4. Bron qilingan xonalar")
-    print("5. Chiqish")
+    print("1. Room Information")
+    print("2. View Rooms")
+    print("3. Book Room")
+    print("4. Booked Rooms")
+    print("5. Exit")
 
-    choice =  input(" - hurmatli mijoz tanla: ")
-
+    choice = input(" - Dear customer, please choose: ")
 
     if choice == "1":
-
         room_information()
 
     elif choice == "2":
-
         show_rooms()
 
     elif choice == "3":
-
         book_room()
 
     elif choice == "4":
-
         show_booked_rooms()
 
     elif choice == "5":
-        print("\n -- Raxmat xurmatli mijoz -- ")
-        print("- Hotel Reservation dasturi tugadi -")
+        print("\n -- Thank you, dear customer -- ")
+        print("- Hotel Reservation program ended -")
         break
 
     else:
-
-        print("\n - uzur ammo bunday tanlov yoq ")
+        print("\n - Sorry, no such choice available.")
